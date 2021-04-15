@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Kalkulator</title>
+ <style>
+  * {
+   margin: 0;
+   padding: 0;
+  }
+  body{
+      display: flex;
+      justify-content: center;
+      height: 100vh;
+      align-items: center;
+       }
+
+  .panel{
+      display: flex;
+      flex-direction: row;
+      width: 25vw;
+      min-width: 350px;
+      min-height: 30px;
+      height: 95vh;
+      flex-wrap: wrap;
+      justify-content: space-between ;
+      align-content: space-between;
+      font-family: 'roboto condensed', arial;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+     background-color:black;
+  
+     
+    
+     
+  }
+  .result{
+ 
+      display: flex;
+      justify-content:  flex-end;    
+      align-items: center;
+      height: 25vh;
+      
+      background-color: rgb(83, 25, 192);
+      color:white;  
+      flex-basis: 100%;
+      padding-right: 30px;
+      line-height: 25vh;
+      font-size: 8vh;
+      width: 25vw;
+
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10%;
+      border-bottom-left-radius: 10%;
+     
+     
+    
+      
+  }
+
+    div.result~div {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+   height: 10vh;
+   flex-basis: 22%;
+   background-color:grey;
+   color: white;
+   font-size: 5vh;
+   text-align: center;
+   line-height: 10vh;
+   border-radius:50% ;
+
+   cursor: pointer;
+  }
+
+ 
+
+  div.result~div:hover{
+      background-color: rgb(44, 44, 35);
+  }
+  div>div:nth-last-child(1),
+  div>div:nth-last-child(2){
+      flex-basis: 40%;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      margin-right: 10px;
+      margin-bottom: 4px;
+      margin-left: 10px;
+  }
+ </style>
+</head>
+
+<body>
+ <div class="panel">
+  <div class="result">0</div>
+  
+ <div class="value">1</div>
+ <div class="value">2</div>
+ <div class="value">3</div>
+ <div class="value">4</div>
+ <div class="value">5</div>
+ <div class="value">6</div>
+ <div class="value">7</div>
+ <div class="value">8</div>
+ <div class="value">9</div>
+ <div class="value">+</div>
+ <div class="value">0</div>
+ <div class="value">-</div>
+ <div class="value">/</div>
+ <div class="value">.</div>
+ <div class="value">*</div>
+ <div class="value">%</div>
+ <div class="value">=</div>
+ <div class="value">C</div>
+
+ </div>
+
+ <script src="script.js"></script>
+</body>
+
+</html>
